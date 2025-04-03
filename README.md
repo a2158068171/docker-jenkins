@@ -103,8 +103,6 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
    - ID: `dockerhub`
    - Secret: [Token de Docker Hub]
 
-### 3.4 
-
 ---
 
 ## 4️⃣ Instalación de Docker CE CLI en Jenkins
@@ -137,13 +135,9 @@ apt-get update && apt-get install -y docker-ce-cli
 
 docker --version
 ```
-
-
-
+---
 
 ## 5️⃣ EJECUTAR EL PIPELINE
-
-
 ### 5.1 Crear pipeline Jenkins
    - Crea un Nuevo Tarea
    - Selecciona "Pipeline"
