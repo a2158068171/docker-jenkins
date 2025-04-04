@@ -1,5 +1,19 @@
 # Jenkins + GitLab + Docker Hub 
 
+## ℹ️ Introducción 
+ Este es un repositorio que proporciona una configuración para levantar un entorno de integración continua (CI/CD) utilizando Jenkins y GitLab dentro de los contenedores de Docker Hub, facilita la automatización de tareas como compilación, prueba, creación de imágenes Docker y despliegue 
+
+Esta hecho para Windows 10/11 con WSL2 y Docker, pero también se podría trasladar este proyecto a GNU/LINUX cambiando para algunas configuraciones
+
+
+### 🧱 Componentes principales
+
+- `docker-compose.yml` : Es un archivo para orquestar los dos contenedores (Jenkins y GitLab) de forma automática sin necesidad de configurarlos, mediante un solo comando 
+
+- `Jenkinsfile`:Define como será la pipeline de Jenkins, dividendo en tres  etapas: descarga del código de GitLab, comprueba las credenciales y por ultimo crea una imagenes personalizadas y la sube a DockerHub 
+
+- `build_and_push.sh` : Automatiza el inicio de sesión a Docker Hub mediante variables y luego crea imágenes personalizadas de (Jenkins y GitLab) y las publica en el repositorio 
+
 ## 🔍 Requisitos Previos
 - Windows 10/11 con WSL2 activado
 - Docker Desktop instalado
