@@ -5,13 +5,13 @@
 
 Esta hecho para Windows 10/11 con WSL2 y Docker, pero también se podría trasladar este proyecto a GNU/LINUX cambiando para algunas configuraciones
 
-### SonarQube
+## ❗SonarQube
 
 Si quieres integrar directamenter SonarQube al proyecto lea [SonarQube](https://github.com/a2158068171/docker-jenkins/tree/main/sonarqube)
 
 Es un compose y jenkinsfile para tener preparado el sonarqube para integrarlo despues
 
-### 🧱 Componentes principales
+## 🧱 Componentes principales
 
 - `docker-compose.yml` : Es un archivo para orquestar los dos contenedores (Jenkins y GitLab) de forma automática sin necesidad de configurarlos, mediante un solo comando 
 
